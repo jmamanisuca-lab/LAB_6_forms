@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros de cursos</title>
+</head>
+<body>
+    <h1>Registro de cursos</h1>
+     <nav>
+        <ul>
+            <li><a href="lenguajes.html">Ir a lenguajes</a></li>
+            <li><a href="index.html">Ir a Index</a></li>
+            <li><a href="validacion.html">Ir a Validación/a></li>
+            <li><a href="registro.html">Ir a Registro</a></li>
+        </ul>
+     </nav>
+    <form action="#" method="post">
+        <fieldset>
+        <legend>Formulario  de Inscripción a un Curso</legend>
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="Nombre" name="Nombre" required>
+         <br><br>
+         <label for="Apellido">Apellido</label>
+         <input type="text" id="Apellido" name="Apellido" required>
+         <br><br>
+         <label for="DNI">Documento de Identidad</label>
+         <input type="number" id="DNI" name="DNI" max="8" required>
+         <br><br>
+         <label for="Correo">Correo electronico</label>
+         <input type="email" name="Correo" id="Correo" required>
+         <br><br>
+         <label for="Curso">Selecione el curso</label>
+         <select name="Curso" id="Curso">
+            <option value="">Introducción  al Desarrollo Web</option>
+            <option value="">Programación Orientada a Objetos</option>
+            <option value="">Taller Narrativa Digital</option>
+         </select>
+         <br><br>
+         <label for="Modalidad"> Modalidad:</label>
+         <input type="radio" name="Presencial" name="Virtual"> Presencial  Virtual
+         <br><br>
+         <label for="Horaios">Horarios Disponibles</label>
+         <input type="radio" name="Mañana"> Mañana 
+         <input type="radio" name="Tarde">  Tarde  
+         <input type="radio" name=" Noche"> Noche
+         <br><br>
+         <label for="Comentarios">Comentarios</label>
+         <input type="text" name="Comentarios" id="Comentarios" placeholder="Comenta aqui tu duda">
+         <br><br>
+         <button type="submit">Guardar</button>
+         <br><br>
+         <button type="reset">Restablecer</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
